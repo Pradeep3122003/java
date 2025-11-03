@@ -105,6 +105,29 @@ public class Learn{
             //%06d for padding with leading zeros
 
             // chapter 10
+            // String operations
+            String sample = "  Hello, Java Programming!";
+            System.out.println("string length: " + sample.length());
+            System.out.println("Uppercase: " + sample.toUpperCase());
+            System.out.println("Lowercase: " + sample.toLowerCase());
+            System.out.println("Trimmed: " + sample.trim());
+            System.out.println("Substring (7, 11): " + sample.substring(7, 11));
+            System.out.println("Replace 'Java' with 'World': " + sample.replace("Java", "World"));
+            System.out.println("Character at index 1: " + sample.charAt(1));
+            System.out.println("Index of 'Java': " + sample.indexOf("Java"));
+            System.out.println("Contains 'Programming': " + sample.contains("Programming"));
+            System.out.println("Starts with '  He': " + sample.startsWith("  He"));
+            System.out.println("Ends with 'ming!': " + sample.endsWith("ming!"));
+            System.out.println("last index of 'a': " + sample.lastIndexOf('a'));
+            System.out.println("Concatenation: " + sample.concat(" Let's learn more."));
+            System.out.println("is empty: " + sample.isEmpty());
+            System.out.println("equals '  Hello, Java Programming!': " + sample.equals("  Hello, Java Programming!"));
+            System.out.println("equalsIgnoreCase '  hello, java programming!': " + sample.equalsIgnoreCase("  hello, java programming!"));
+
+
+
+
+
 
 
     }
