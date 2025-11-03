@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 public class Learn{
     public static void main(String[] args) {
         // chapter 1
@@ -63,6 +64,14 @@ public class Learn{
             //order of operations
             int result = (a + b) * (a - b);
             System.out.println("Result of (a + b) * (a - b): " + result);
+
+            // chapter 7
+            // Generating Random Numbers
+            Random random = new Random();
+            int randNum = random.nextInt(100); 
+            float randFloat = random.nextFloat() * 100;
+            System.out.println("Random Number: " + randNum);
+            System.out.println("Random Float: " + randFloat);
 
     }
 }
