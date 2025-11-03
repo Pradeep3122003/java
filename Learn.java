@@ -73,5 +73,21 @@ public class Learn{
             System.out.println("Random Number: " + randNum);
             System.out.println("Random Float: " + randFloat);
 
+            // chapter 8
+            //math functions
+            int num = -10;
+            System.out.println("Absolute value of " + num + " is: " + Math.abs(num));
+            System.out.println("Square root of 16 is: " + Math.sqrt(16));
+            System.out.println("2 raised to the power 3 is: " + Math.pow(2, 3));
+            System.out.println("Maximum of 10 and 20 is: " + Math.max(10, 20));
+            System.out.println("Minimum of 10 and 20 is: " + Math.min(10, 20));
+            System.out.println("Value of Pi: " + Math.PI);
+            System.out.println("Value of e: " + Math.E);
+            System.out.println("Ceiling of 4.3: " + Math.ceil(4.3));
+            System.out.println("Floor of 4.7: " + Math.floor(4.7));
+            System.out.println("Round of 4.5: " + Math.round(4.5));
+
+
+
     }
 }
