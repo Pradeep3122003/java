@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 public class Learn{
+    static int a1=10;//global variable
     public static void main(String[] args) {
         // chapter 1
         // Print Hello, World! to the console
@@ -189,6 +190,19 @@ public class Learn{
             System.out.println("x AND y: " + (x && y));
             System.out.println("x OR y: " + (x || y));
             System.out.println("NOT x: " + (!x));
+
+            // chapter 15
+            //methods
+            song("bolo");
+            
+            // chapter 16
+            //overloaded methods
+
+            song(100);
+
+            //variable scopes
+            int a1=5; //Local variable
+            System.out.println(a1);
             
 
 
@@ -197,5 +211,13 @@ public class Learn{
 
 
 
+
+    }
+    //method
+    static void song(String a){
+        System.out.printf("%s jing jing jingat!",a);
+    }
+    static void song(int a){
+        System.out.printf("%d baar jing jing jingat!",a);
     }
 }
