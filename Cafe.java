@@ -2,13 +2,16 @@ import java.util.Scanner;
 public class Cafe {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        String dishes="Coffee, Tea, Sandwich, Cake, pizza";
+        String prices="2.50, 2.00, 5.00, 3.00, 8.00";
         System.out.println("Welcome to the Cafe!");
         System.out.print("Please enter your name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Hello " + name + "! What would you like to order? ");
+        System.out.print("Hello " + name + "! What would you like to order?\n "+dishes+"\n");
         String order = scanner.nextLine();
+        order=order.trim();
+        
 
         System.out.print("How many " + order + "(s) would you like? ");
         int quantity = scanner.nextInt();
