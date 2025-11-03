@@ -87,6 +87,24 @@ public class Learn{
             System.out.println("Floor of 4.7: " + Math.floor(4.7));
             System.out.println("Round of 4.5: " + Math.round(4.5));
 
+            // chapter 9
+            //printf formatting
+            double price = 29.99;
+            int quantity = 5;
+            System.out.printf("Price: $%.2f, Quantity: %d, Total: $%.2f", price, quantity, price * quantity);
+            // %d for integers
+            // %f for floating point numbers
+            // %.2f for floating point numbers with 2 decimal places
+            // %s for strings
+            // %c for characters
+            // %b for boolean values
+            //%+.2f for showing positive sign with 2 decimal places
+            //%,d for comma separator in integers
+            // %e for scientific notation
+            //%(d for negative numbers in parentheses
+            //%06d for padding with leading zeros
+
+            // chapter 10
 
 
     }
