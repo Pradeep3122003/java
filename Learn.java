@@ -124,6 +124,43 @@ public class Learn{
             System.out.println("equals '  Hello, Java Programming!': " + sample.equals("  Hello, Java Programming!"));
             System.out.println("equalsIgnoreCase '  hello, java programming!': " + sample.equalsIgnoreCase("  hello, java programming!"));
 
+            // chapter 11
+            //ternary operator
+            int age = 20;
+            String eligibility = (age >= 18) ? "Eligible to vote." : "Not eligible to vote.";
+            System.out.println("Age: " + age + " - " + eligibility);
+
+            // chapter 12
+            //case switch
+            int day = 3;
+            String dayName;
+            switch (day) {
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                case 7:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "Invalid day";
+            }
+            System.out.println("Day " + day + " is " + dayName);
+
 
 
 
