@@ -33,5 +33,36 @@ public class Learn{
             //scanner.nextBoolean() for boolean input
             // Close the scanner
             scanner.close();
+
+            // chapter 4
+            // Conditional Statements
+            int number = 10;
+            if (number > 0) {
+                System.out.println(number + " is a positive number.");
+            } else if (number < 0) {
+                System.out.println(number + " is a negative number.");
+            } else {
+                System.out.println("The number is zero.");
+            }
+
+            // chapter 5
+            //airthmetic operations
+            int a = 15;
+            int b = 4;
+            System.out.println("Addition: " + (a + b));
+            System.out.println("Subtraction: " + (a - b));
+            System.out.println("Multiplication: " + (a * b));
+            System.out.println("Division: " + (a / b));
+            System.out.println("Modulus: " + (a % b));
+
+            //increment and decrement
+            a++; // increment by 1
+            b--; // decrement by 1
+
+            // chapter 6
+            //order of operations
+            int result = (a + b) * (a - b);
+            System.out.println("Result of (a + b) * (a - b): " + result);
+
     }
 }
