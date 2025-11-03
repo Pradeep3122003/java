@@ -161,6 +161,36 @@ public class Learn{
             }
             System.out.println("Day " + day + " is " + dayName);
 
+            // chapter 13
+            //Loops
+            System.out.println("For Loop:");
+            for (int i = 1; i <= 5; i++) {
+                System.out.println("Iteration " + i);
+            }
+
+            System.out.println("While Loop:");
+            int j = 1;
+            while (j <= 5) {
+                System.out.println("Iteration " + j);
+                j++;
+            }
+
+            System.out.println("Do-While Loop:");
+            int k = 1;
+            do {
+                System.out.println("Iteration " + k);
+                k++;
+            } while (k <= 5);
+
+            // chapter 14
+            //Logical Operators
+            boolean x = true;
+            boolean y = false;
+            System.out.println("x AND y: " + (x && y));
+            System.out.println("x OR y: " + (x || y));
+            System.out.println("NOT x: " + (!x));
+            
+
 
 
 
