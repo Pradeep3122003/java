@@ -203,7 +203,19 @@ public class Learn{
             //variable scopes
             int a1=5; //Local variable
             System.out.println(a1);
-            
+
+            //  chapter 17
+            //Arrays
+            int[] arr = {1, 2, 3, 4, 5};
+            for (int i = 0; i < arr.length; i++) {
+                System.out.println(arr[i]);
+            }
+
+            String [] names = {"John", "Jane", "Bob"};
+            for (String nam : names) {
+                System.out.println(nam);
+            }
+
 
 
 
