@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 import java.util.Random;
 public class Learn{
     static int a1=10;//global variable
@@ -215,6 +216,69 @@ public class Learn{
             for (String nam : names) {
                 System.out.println(nam);
             }
+
+
+            //Array operations
+            int[] numbers = {1, 2, 3, 4, 5};
+            int sum = 0;
+            for (int n : numbers) {
+                sum += n;
+            }
+            System.out.println("Sum: " + sum);
+
+            int max = numbers[0];
+            for (int n : numbers) {
+                if (n > max) {
+                    max = n;
+                }
+            }
+            System.out.println("Max: " + max);
+
+            int min = numbers[0];
+            for (int n : numbers) {
+                if (n < min) {
+                    min = n;
+                }
+            }
+            System.out.println("Min: " + min);
+
+            int arraylen = numbers.length;
+            System.out.println("Length: " + arraylen);
+
+            Arrays.sort(numbers);
+            System.out.println("Sorted array: " + Arrays.toString(numbers));
+
+            //2d array
+            int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j1 = 0; j1 < matrix[i].length; j1++) {
+                    System.out.print(matrix[i][j1] + " ");
+                }
+                System.out.println();
+            }
+
+            //3d array
+            int[][][] cube = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}};
+            for (int k1 = 0; k1 < cube.length; k1++) {
+                for (int i1 = 0; i1 < cube[k1].length; i1++) {
+                    for (int j1 = 0; j1 < cube[k1][i1].length; j1++) {
+                        System.out.print(cube[k1][i1][j1] + " ");
+                    }
+                    System.out.println();
+                }
+                System.out.println();
+            }
+
+            // chapter 18
+            //classes
+            //constructor
+            //inheritance
+            //interface
+            //enum
+            gpa g = new gpa();
+            g.input();
+            g.calculate();
+            
 
 
 
