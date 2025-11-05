@@ -36,8 +36,7 @@ public class Learn{
             //scanner.nextLine() for string input and clear buffer
             //scanner.nextFloat() for float input
             //scanner.nextBoolean() for boolean input
-            // Close the scanner
-            scanner.close();
+            
 
             // chapter 4
             // Conditional Statements
@@ -278,7 +277,18 @@ public class Learn{
             //interface
             //enum
             gpa g = new gpa();
-            g.input();
+            System.out.print("How many subjects: ");
+            int ts = scanner.nextInt();
+
+            for (int i = 0; i < ts; i++) {
+                System.out.print("Enter subject name: ");
+                String sub = scanner.next();
+                System.out.print("Enter marks: ");
+                double mark = scanner.nextDouble();
+                System.out.print("Enter credits: ");
+                int credit = scanner.nextInt();
+                g.input(sub, mark, credit);
+            }
             g.calculate();
             
             //inheritance example
@@ -332,7 +342,7 @@ public class Learn{
 
 
 
-
+scanner.close();
 
 
 

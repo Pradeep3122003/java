@@ -1,27 +1,28 @@
+import java.util.ArrayList;
 public class gpa {
-    String[] subject = new String [10];
-    int[] marks = new int [10];
-    int[] credits = new int [10];
+    ArrayList<String> subject = new ArrayList<String>();
+    ArrayList<Double> marks = new ArrayList<Double>();
+    ArrayList<Integer> credits = new ArrayList<Integer>();
+    
     double gpa = 0.0;
   
-    void input(){
-        System.out.println("Enter total number of subjects: ");
-        
-        int n = 10;
-        System.out.println("Enter subject, marks and credits n this manner:  subject marks credits\n");
-        for(int i=0;i<n;i++){
-            // subject[i] = sc.next();
-            // marks[i] = sc.nextInt();
-            // credits[i] = sc.nextInt();
-            System.out.println("hi");
-        }
+    void input(String sub, Double mark, int credit){
+        subject.add(sub);
+        marks.add(mark);
+        credits.add(credit);
       
     }
 
     void calculate(){
-        for(int i=0;i<subject.length;i++){
-            gpa = gpa + (marks[i]*credits[i]);
+        for(int i=0;i<subject.size();i++){
+            gpa += marks.get(i)*credits.get(i);
         }
         gpa = gpa/100.0;
+        double tot=0;
+        for(double mark:marks){
+            tot+=mark;
+        }
+        System.out.println("Total marks: "+tot);
+        System.out.println("GPA: "+gpa);
     }
 }
