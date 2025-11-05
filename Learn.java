@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.ArrayList;
+import java.util.HashSet;
 public class Learn{
     static int a1=10;//global variable
     public static void main(String[] args) {
@@ -279,6 +281,54 @@ public class Learn{
             g.input();
             g.calculate();
             
+            //inheritance example
+            //method overloading
+            //method overriding
+            //polymorphism
+            //encapsulation
+            //abstraction
+            
+            // chapter 19
+            // ArrayList
+            ArrayList<String> fruits = new ArrayList<>();
+            fruits.add("apple");
+            fruits.add("banana");
+            fruits.add("cherry");
+            fruits.add("date");
+            System.out.println("Fruits: " + fruits);
+
+            // chapter 20
+            //HashSet
+            HashSet<String> fruits1 = new HashSet<>();
+            fruits1.add("apple");
+            fruits1.add("banana");
+            fruits1.add("cherry");
+            fruits1.add("date");
+            System.out.println("Fruits: " + fruits1);
+
+            //chapter 21
+            //exception handling
+            //try catch
+            //throw
+            //finally
+            //checked exception
+            //unchecked exception
+            //custom exception
+            //multiple catch block
+
+            try{
+                int a2 = 10;
+                int b1 = 0;
+                int c1 = a2 / b1;
+                System.out.println(c1);
+            }
+            catch(ArithmeticException e){
+                System.out.println("Error: " + e.getMessage());
+            }
+            finally{
+                System.out.println("Finally block executed.");
+            }
+        
 
 
 
