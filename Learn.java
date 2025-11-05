@@ -342,7 +342,31 @@ public class Learn{
 
 
 
-scanner.close();
+            scanner.close();
+
+            // chapter 22
+            //file handling
+            //file creation
+            //file writing
+            //file reading
+
+            // chapter 23
+            // threads
+            // thread creation
+            // thread execution
+            // thread synchronization
+            // thread communication
+            // thread priority
+            // thread state
+            // thread group
+            // thread lifecycle
+            // thread interruption
+            // thread interruption
+            // thread interruption
+            // thread interruption
+
+            
+
 
 
 
